@@ -18,11 +18,11 @@ Set up my language course
 Настрой мой языковой курс
 ```
 
-The tutor asks one question at a time: native language, target language, approximate level, goal, available time, interests/work, and priorities. Unknown answers are fine. The default complete example is German; another language needs an explicitly provisional adapted route.
+The tutor sends one numbered questionnaire covering explanation language, target language, approximate level, goal, available time, interests/work, priority and topic-chat preference. Answer all relevant points in one message; unknown or skipped optional answers are fine. The default complete example is German; another language needs an explicitly provisional adapted route.
 
-Преподаватель задаёт вопросы по одному. Можно ответить «не знаю» или пропустить личные сведения. Затем он предложит диагностику примерно на 10–15 минут и сохранит ваш маршрут. Проверка аудирования возможна только при доступном звуке.
+Преподаватель присылает один нумерованный список. Ответьте на все нужные пункты одним сообщением; можно написать «не знаю» или пропустить личные сведения. Затем он предложит диагностику примерно на 10–15 минут, уже по одному заданию, и сохранит ваш маршрут. Проверка аудирования возможна только при доступном звуке.
 
-If your client can create chats, the tutor asks once whether to create a separate chat for each topic in this same local project folder, unless you already requested that. You can also say: `Create a separate chat for each topic in this same local project folder` / `Создавай отдельный чат для каждой темы в этой же локальной папке проекта`. The choice is remembered for the course.
+The same questionnaire includes the chat choice. You can answer: `Create a separate chat for each topic in this same local project folder` / `Создавай отдельный чат для каждой темы в этой же локальной папке проекта`. The choice is remembered for the course.
 
 After the nine files are saved, the tutor prepares your first topic chat or gives the manual fallback below. Your native language controls explanations; the English command does not lock the course into English.
 
@@ -64,13 +64,13 @@ Paste this explicit fallback:
 ```text
 Read INSTRUCTIONS.md in this folder. Follow its startup procedure.
 Read courses/current/ if it exists. Set up my language course if it does not.
-Otherwise start my next lesson. Ask one question at a time.
+Otherwise start my next lesson. Send setup as one numbered questionnaire; during diagnostics and lessons, ask one task at a time.
 ```
 
 ```text
 Прочитай INSTRUCTIONS.md в этой папке и выполни процедуру запуска.
 Если есть courses/current/, прочитай мой прогресс и начни следующее занятие.
-Если папки нет, настрой курс. Задавай по одному вопросу.
+Если папки нет, настрой курс одной нумерованной анкетой. На диагностике и занятиях давай по одному заданию.
 ```
 
 If the client cannot edit files, it must say progress is **not saved** and give complete updated Markdown files for you to save manually. Without either file writing or manual saving, progress will not persist. If it cannot read files, provide INSTRUCTIONS.md, your nine course files, the route overview and current topic/dependency cards manually; for a fresh setup provide the nine clean templates and selected route files too. The tutor should name missing files rather than invent their contents. This fallback is less convenient.

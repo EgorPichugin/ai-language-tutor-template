@@ -3,7 +3,8 @@
 Owner: learner preferences and setup answers. Do not store diagnostic scores here.
 
 - setup_stage: not_started
-- next_setup_question: 1
+- setup_questionnaire: not_answered
+- setup_missing_required: target_language
 - display_alias: not provided
 - native_language: unknown
 - explanation_language: unknown

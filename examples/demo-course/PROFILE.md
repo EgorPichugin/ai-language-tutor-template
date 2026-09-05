@@ -1,7 +1,8 @@
 # Learner profile — FICTIONAL
 
 - setup_stage: ready
-- next_setup_question: complete
+- setup_questionnaire: answered
+- setup_missing_required: none
 - display_alias: Alex (invented)
 - native_language: Russian
 - explanation_language: Russian, with German chunks and brief translations

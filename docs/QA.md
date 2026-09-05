@@ -12,8 +12,8 @@ The optional read-only [repository checker](../tools/check_repository.py) valida
 
 | # | Scenario and simulated input | Trace and expected observable outcome | Review outcome |
 | --- | --- | --- | --- |
-| 1 | New user downloads/extracts project and types Set up my language course | README/QUICKSTART → adapter → INSTRUCTIONS. courses/current absent; create nine missing files, ask native language first, wait for reply | Walkthrough passed; no code installation required |
-| 2 | Learner answers setup questions and attempts diagnosis | PROFILE stage questions → diagnostic; prompts arrive one at a time; A001 owns observations; PLAN/TOPICS use pointers; untested skills/topics stay unknown/not_started | Walkthrough passed; interrupted setup resumes at next question |
+| 1 | New user downloads/extracts project and types Set up my language course | README/QUICKSTART → adapter → INSTRUCTIONS. courses/current absent; create nine missing files and send one numbered questionnaire | Walkthrough passed; no code installation required |
+| 2 | Learner answers the setup form in one message and attempts diagnosis | PROFILE stage questions → save supplied answers together → diagnostic; diagnostic prompts arrive one at a time; A001 owns observations; PLAN/TOPICS use pointers; untested skills/topics stay unknown/not_started | Walkthrough passed; only a missing target language needs a compact follow-up |
 | 3 | First short lesson in a text-only client | A1 example requests an attempt, then corrects/reuses; reading is explicitly reading; spoken_output/listening not_assessed; topic learning with modality gap | Walkthrough passed; no false audio or stable claim |
 | 4 | Learner finishes a lesson and progress is saved | Pending LOG entry records evidence and intended edits; changed tables use existing IDs; files reread before complete; partial sessions do not count as finished | File-flow simulation passed; cooperative Markdown procedure, not atomic transaction |
 | 5 | Old error returns | Demo S003 success → S004 recurring E001 with help/reuse/transfer failure; DE-A2-03 becomes unstable; Q002 updated rather than duplicated | Cross-file evidence and date review passed |
@@ -96,9 +96,9 @@ Worked closing messages and transitions: [topic-transition example](../examples/
 
 ## Context-size update — 2026-09-05
 
-The monolithic tutor instruction file was replaced by an 8,001-byte core plus five action-specific modules. The former file measured 33,652 bytes. German level files became compact indexes; each of the 42 complete cards now has its own file. A representative DE-A1-01 card is 1,223 bytes, while the former A1 level file was 15,884 bytes. These byte comparisons establish smaller default reads; they do not predict exact tokens, cache behavior or account charges.
+The monolithic tutor instruction file was replaced by an 8,091-byte core plus five action-specific modules. The former file measured 33,652 bytes. German level files became compact indexes; each of the 42 complete cards now has its own file. A representative DE-A1-01 card is 1,223 bytes, while the former A1 level file was 15,884 bytes. These byte comparisons establish smaller default reads; they do not predict exact tokens, cache behavior or account charges.
 
-The checker was updated to require all modules/cards, enforce size budgets (10 KB core, 6 KB per scoped module, 4 KB per level index and 3 KB per topic card), and validate card fields, links, dependencies and demo references. Final result: **PASS**, 92 Markdown files, 375 internal links, 42 topic cards and 100 valid dependency edges. Core size is 8,001 bytes; the largest topic card is under the 3 KB limit. No live client billing measurement or real lesson was run.
+The checker was updated to require all modules/cards, enforce size budgets (10 KB core, 6 KB per scoped module, 4 KB per level index and 3 KB per topic card), and validate card fields, links, dependencies and demo references. Final result: **PASS**, 92 Markdown files, 375 internal links, 42 topic cards and 100 valid dependency edges. Core size is 8,091 bytes; the largest topic card is under the 3 KB limit. No live client billing measurement or real lesson was run.
 
 ## Remaining limits
 

@@ -9,7 +9,7 @@ Open this folder in a file-capable AI assistant, set up your course, and continu
 ## Start learning
 
 1. Download the repository with **Code → Download ZIP**, then extract it. Open the extracted folder in Codex or Claude Code. You need your own working AI client with permission to read and edit this folder; this repository does not supply an account or model.
-2. Write `Set up my language course` (or `Настрой мой языковой курс`). The tutor asks seven short questions one at a time, then offers a brief diagnostic. You may skip personal questions. If your client supports creating chats, choose separate topic chats once; an existing choice is remembered.
+2. Write `Set up my language course` (or `Настрой мой языковой курс`). The tutor sends one short numbered questionnaire, including your topic-chat preference. Answer it in one message, then take a brief diagnostic one task at a time. You may skip personal questions; an existing chat choice is remembered.
 3. Open the prepared topic chat and write `Let's start` (or `Начнём`). If chats must be created manually, the tutor supplies one exact title and command. For later lessons, `Start my next lesson` works from any course chat. The German route has 42 topics across A1, A2, and B1.
 
 No package installation, server, API key configuration, or programming is needed for the template. See [QUICKSTART.md](QUICKSTART.md) if instructions do not load or file writing is unavailable.
