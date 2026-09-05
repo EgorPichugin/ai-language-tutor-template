@@ -1,0 +1,18 @@
+# Private learner state is local. Never commit it to the public template.
+/courses/current/
+/courses/backups/
+/courses/*-private/
+/.claude/
+/.codex/
+/CLAUDE.local.md
+/.env
+/.env.*
+*.key
+*.pem
+*.wav
+*.mp3
+*.m4a
+*.mp4
+__pycache__/
+.DS_Store
+Thumbs.db
